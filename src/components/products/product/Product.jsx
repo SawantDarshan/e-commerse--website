@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardMedia, CardContent, CardActions, Typography, IconButton} from "@material-ui/core"
+import { Card, CardMedia, CardContent, CardActions, Typography, IconButton, Chip} from "@material-ui/core"
 import { AddShoppingCart } from '@material-ui/icons';
 import useStyles from './styles';
 
@@ -8,6 +8,7 @@ const Product = ({product, onAddToCart}) => {
     return (
         <Card className={classes.root}>
             <CardMedia  className={classes.media} image={product.image.url} title={product.name}></CardMedia>
+            <Chip label="PREMIUM"  className = {classes.label}/>
             <CardContent>
                 <div className={classes.cardContent}>
                      <Typography gutterBottom  component="h6">
