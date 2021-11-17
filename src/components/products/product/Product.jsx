@@ -10,14 +10,14 @@ const Product = ({product, onAddToCart}) => {
             <CardMedia  className={classes.media} image={product.image.url} title={product.name}></CardMedia>
             <CardContent>
                 <div className={classes.cardContent}>
-                     <Typography gutterBottom variant="h5" component="h2">
-                        {product.name.slice(0,10) + "..."}
+                     <Typography gutterBottom  component="h6">
+                        {product.name}
                     </Typography>
-                     <Typography gutterBottom variant="h5" component="h2">
+                     <Typography gutterBottom  component="h6">
                         {product.price.formatted_with_symbol}
                     </Typography>
                 </div>
-                    <Typography dangerouslySetInnerHTML={{ __html: product.description.slice(0,25)+"..." }}  color="textSecondary"></Typography>
+                    <Typography dangerouslySetInnerHTML={{ __html: product.description}} style={{fontSize: "0.8rem"}}  color="textSecondary"></Typography>
             </CardContent>
             <CardActions disableSpacing className={classes.cardActions}>
                 <IconButton aria-label="Add to Cart" onClick={()=>onAddToCart(product.id,1)} >
