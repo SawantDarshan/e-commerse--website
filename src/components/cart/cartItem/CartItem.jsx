@@ -49,7 +49,7 @@ const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
           variant="contained"
           type="button"
           color="secondary"
-          onClick={() => {}}
+          onClick={()=>onRemoveFromCart(item.id)}
         >
           Remove
         </Button>
