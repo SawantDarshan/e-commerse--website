@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Products, Navbar, Cart, Checkout, Auth } from "./components";
+import { Products, Navbar, Cart, Checkout, Auth, Hero } from "./components";
 import { commerce } from "./lib/commerce";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import {auth} from "./components/auth/firebase-config"
+// import webShop from "./asset/web-shop.svg"
 
 const App = () => {
   // product management states
@@ -119,6 +120,7 @@ const App = () => {
     <Router>
       <div>
         <Navbar totalItems={cart.total_items}></Navbar>
+        <Hero></Hero>
         <Switch>
 
           <Route exact path="/auth">
@@ -149,6 +151,7 @@ const App = () => {
       </div>
     </Router>
     )}
+    
   </>
   );
 };
