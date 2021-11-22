@@ -14,6 +14,7 @@ const Product = ({product, onAddToCart}) => {
                      <Typography gutterBottom  component="h6">
                         {product.name}
                     </Typography>
+                    
                      <Typography gutterBottom  component="h6">
                         {product.price.formatted_with_symbol}
                     </Typography>

@@ -37,13 +37,13 @@ const Cart = ({
         })}
       </Grid>
       <div className={classes.cardDetails}>
-        <Typography variant="h4">
+        <Typography variant="h7">
           Subtotal:{cart.subtotal.formatted_with_symbol}
         </Typography>
         <div>
           <Button
             className={classes.emptyButton}
-            size="large"
+            size="small"
             type="button"
             variant="contained"
             color="secondary"
@@ -55,7 +55,7 @@ const Cart = ({
             component={Link}
             to="/checkout"
             className={classes.checkoutButton}
-            size="large"
+            size="small"
             type="button"
             variant="contained"
             color="primary"

@@ -4,6 +4,8 @@ export {default as Cart} from './cart/Cart'
 export {default as Checkout} from './checkoutForm/checkout/Checkout'
 export {default as Auth} from './auth/Auth'
 export {default as Hero} from './hero/Hero'
+export {default as About} from './about/About'
+
 
 
 
