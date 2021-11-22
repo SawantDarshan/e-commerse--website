@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <Carousel
       className="text-white text-center bg-info"
-      style={{ marginTop: "4em", height: "400px" }}
+      style={{ marginTop: "4em", minHeight: "80vh", placeItems: "center", display: "flex", justifyContent: "center" }}
     >
       <Carousel.Item>
         <Row className="mx-5" style={{ minHeight: "50vh" }}>
