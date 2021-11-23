@@ -1,0 +1,25 @@
+body{
+}
+
+.text-orange{
+    color: #F79234;
+}
+.shadow-box{
+    box-shadow: 5px 5px 3px 3px #F79234;
+    transition: all 0.3s;
+}
+.shadow-box:hover{
+    box-shadow: 5px 5px 3px 3px #5bc0de;
+
+}
+.banner-card{
+}
+.gradient{
+    background-image: linear-gradient(to right top, #5bc0de, #89c9ea, #afd3f2, #cedef7, #e7ebfa, #ebe8fe, #f4e4fe, #ffe0fb, #ffc5e2, #ffaab5, #ff9779, #f79234);
+}
+.bg-light{
+    background-color: #E6F4F1;
+}
+.bg-orange{
+    background-color: #F79234;
+}

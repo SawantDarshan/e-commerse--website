@@ -4,6 +4,7 @@ export default makeStyles(() => ({
   root: {
     // maxWidth: 345, 
     // maxWidth: '100%',
+    minHeight: "500px",
   },
   media: {
     height: 0,
@@ -11,7 +12,7 @@ export default makeStyles(() => ({
     backgroundSize: "contain",
   },
   label:{
-    backgroundColor: "rgba(224, 146, 202, 0.5)",
+    backgroundColor: "#F79234",
     marginLeft: "1em",
     fontSize:  "0.7em",
   },

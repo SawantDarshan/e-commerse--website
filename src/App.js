@@ -11,6 +11,7 @@ import {
 import { commerce } from "./lib/commerce";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { auth } from "./components/auth/firebase-config";
+import "./app.css"
 // import webShop from "./asset/web-shop.svg"
 
 const App = () => {

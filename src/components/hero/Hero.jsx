@@ -10,16 +10,16 @@ import mockup from "../../asset/mockup-plasma.svg";
 const Hero = () => {
   return (
     <Carousel
-      className="text-white text-center bg-info"
-      style={{ marginTop: "4em", minHeight: "80vh", placeItems: "center", display: "flex", justifyContent: "center" }}
+      className="text-white text-center gradient"
+      style={{ marginTop: "4em", minHeight: "500px", placeItems: "center", display: "flex", justifyContent: "center" }}
     >
       <Carousel.Item>
         <Row className="mx-5" style={{ minHeight: "50vh" }}>
           <Col className="mt-auto mb-auto" xs={12} md={6}>
-            <Card className="m-1 text-dark" style={{ border: "none" }}>
+            <Card className="m-1 text-dark shadow-box banner-card" style={{ border: "none" }}>
               <Card.Body>
                 <Card.Title>Buy Dresses at 10% off</Card.Title>
-                  <Card.Text className="display-5 text-primary">Online Shop</Card.Text>
+                  <Card.Text className="display-5 text-orange">Online Shop</Card.Text>
                 <Card.Text>
                   <small>
                     For shopping{" "}
@@ -55,10 +55,10 @@ const Hero = () => {
       <Carousel.Item>
         <Row className="mx-5" style={{ minHeight: "50vh" }}>
           <Col className="mt-auto mb-auto" xs={12} md={6}>
-            <Card className="m-1 text-dark" style={{ border: "none" }}>
+            <Card className="m-1 text-dark shadow-box banner-card" style={{ border: "none" }}>
               <Card.Body>
                 <Card.Title>Buy Shoes at 5% off</Card.Title>
-                  <Card.Text className="display-5 text-primary">Online Shop</Card.Text>
+                  <Card.Text className="display-5 text-orange">Online Shop</Card.Text>
                 <Card.Text>
                   <small>
                     For shopping{" "}
@@ -94,10 +94,10 @@ const Hero = () => {
       <Carousel.Item>
         <Row className="mx-5" style={{ minHeight: "50vh" }}>
           <Col className="mt-auto mb-auto" xs={12} md={6}>
-            <Card className="m-1 text-dark" style={{ border: "none" }}>
+            <Card className="m-1 text-dark shadow-box banner-card" style={{ border: "none" }}>
               <Card.Body>
                 <Card.Title>Buy Pants at 13% off</Card.Title>
-                  <Card.Text className="display-5 text-primary">Online Shop</Card.Text>
+                  <Card.Text className="display-5 text-orange">Online Shop</Card.Text>
                 <Card.Text>
                   <small>
                     For shopping{" "}

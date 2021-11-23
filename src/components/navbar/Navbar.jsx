@@ -15,7 +15,7 @@ const NavbarProject = ({ totalItems, logout,user }) => {
   const location = useLocation();
 
   return (
-    <Navbar bg="white" expand="lg" fixed="top" style={{height: "4em"}}>
+    <Navbar expand="lg" fixed="top" style={{height: "4em"}} className="bg-orange">
       <Container>
         <Navbar.Brand as={Link} to="/">
         <Typography variant="h6" className={classes.title} color="inherit">
@@ -30,7 +30,7 @@ const NavbarProject = ({ totalItems, logout,user }) => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
-          <Nav className="me-auto w-100" style={{ placeItems: "center", backgroundColor: "white"}}>
+          <Nav className="bg-orange w-100" style={{ placeItems: "center", borderRadius: "50px"}}>
             <Nav.Link as={Link} to="/" >Home</Nav.Link>
             <Nav.Link as={Link} to="/aboutus">AboutUs</Nav.Link>
             <Nav.Link as={Link} to="/checkout">Checkout</Nav.Link>
