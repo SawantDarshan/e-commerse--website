@@ -1,10 +1,14 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import { Apartment } from "@material-ui/icons";
+
 
 const About = () => {
   return (
     <Container className="text-center mt-5 pt-5">
-      <h1 >About Us</h1>
+      <h1 className="display-4 my-3 heading1">
+        <Apartment style={{ fontSize: "1em" }} /> About us
+      </h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
         quibusdam aspernatur sapiente repellendus culpa soluta neque ullam

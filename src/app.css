@@ -13,6 +13,9 @@ body{
 
 }
 .banner-card{
+    background-color: #f7923400;
+    border: 1px solid rgba(121, 120, 120, 0.473) !important;
+    border-radius: 10px;
 }
 .gradient{
     background-image: linear-gradient(to right top, #5bc0de, #89c9ea, #afd3f2, #cedef7, #e7ebfa, #ebe8fe, #f4e4fe, #ffe0fb, #ffc5e2, #ffaab5, #ff9779, #f79234);
@@ -22,4 +25,21 @@ body{
 }
 .bg-orange{
     background-color: #F79234;
+}
+.heading1{
+    /* color: #ED7090; */
+    position: relative;
+    font-weight: 300;
+    display: grid;
+    place-items: center;
+}
+.heading1::before{
+    /* content: "";
+    position: absolute;
+    background-color: #00C56F;
+    width: 50%;
+    height: 5px;
+    border-radius: 50px;
+    z-index: 1;
+    bottom: -5px; */
 }

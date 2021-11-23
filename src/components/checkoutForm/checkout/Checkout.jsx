@@ -16,6 +16,8 @@ import { commerce } from "../../../lib/commerce";
 // import Confirmation from "../Confirmation"
 import { Link } from "react-router-dom";
 import useStyles from "./styles";
+import { Payment } from "@material-ui/icons";
+
 
 const steps = ["Shipping address", "Payment Details"];
 
@@ -105,9 +107,9 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
       <div className={classes.toolbar} />
       <main className={classes.layout}>
         <Paper className={classes.paper}>
-          <Typography variant="h4" align="center">
-            Checkout
-          </Typography>
+        <h1 className="display-4 my-3 heading1">
+        <Payment style={{ fontSize: "1em" }} /> Checkout
+      </h1>
           <Stepper activeStep={activeStep} className={classes.stepper}>
             {steps.map((label) => (
               <Step key={label}>

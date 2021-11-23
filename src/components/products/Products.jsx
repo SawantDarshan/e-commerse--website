@@ -1,5 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import { MenuOpen } from "@material-ui/icons";
+
 
 import Product from "./product/Product"
 import useStyles from './styles';
@@ -10,8 +12,8 @@ const Products = ({products, onAddToCart}) => {
 
     return (
         <main className={classes.content}>
-            <h1 className="display-4 my-3">Products</h1>
-            {/* <div className={classes.toolbar}/> */}
+            <h1 className="display-4 my-3 heading1"> <MenuOpen style={{fontSize: "1em"}}/> Products</h1>
+            <div className={classes.toolbar}/>
             <Grid container justifyContent="center" spacing={4}>
                 {
                     products.map((product)=>{

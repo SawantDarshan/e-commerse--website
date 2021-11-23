@@ -4,7 +4,7 @@ import {
   Badge,
   Typography,
 } from "@material-ui/core";
-import { ShoppingCart } from "@material-ui/icons";
+import { ShoppingCart, } from "@material-ui/icons";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../asset/logo.svg";
 import useStyles from "./styles";
