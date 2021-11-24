@@ -26,6 +26,20 @@ const NavbarProject = ({ totalItems, logout,user }) => {
               className={classes.image}
             />{" "}
             E-commerce app
+            {location.pathname === "/" && (
+             <Link to="/cart" className="ms-2">
+               <IconButton
+                 
+                 aria-label="Show cart items"
+                 color="inherit"
+                 
+               >
+                 <Badge  badgeContent={totalItems} color="secondary">
+                   <ShoppingCart/>
+                 </Badge>
+               </IconButton>
+             </Link>
+           )} 
           </Typography>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -46,23 +60,12 @@ const NavbarProject = ({ totalItems, logout,user }) => {
                 Logout
               </NavDropdown.Item>
             </NavDropdown>
-            {location.pathname === "/" && (
-             <Nav.Link as={Link} to="/cart" className="ms-lg-auto">
-               <IconButton
-                 
-                 aria-label="Show cart items"
-                 color="inherit"
-                 
-               >
-                 <Badge  badgeContent={totalItems} color="secondary">
-                   <ShoppingCart/>
-                 </Badge>
-               </IconButton>
-             </Nav.Link>
-           )} 
+            
           </Nav>
         </Navbar.Collapse>
+        
       </Container>
+      
     </Navbar>
   );
 

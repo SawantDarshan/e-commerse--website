@@ -20,6 +20,9 @@ body{
 .gradient{
     background-image: linear-gradient(to right top, #5bc0de, #89c9ea, #afd3f2, #cedef7, #e7ebfa, #ebe8fe, #f4e4fe, #ffe0fb, #ffc5e2, #ffaab5, #ff9779, #f79234);
 }
+.gradient-light{
+    background-image: linear-gradient(to bottom, #5bc0de, #7ccbe3, #98d7e9, #b2e2ee, #ccedf5, #d9f2f9, #e6f7fc, #f3fcff, #f7fcff, #fbfdff, #fdfeff, #ffffff);
+}
 .bg-light{
     background-color: #E6F4F1;
 }

@@ -39,8 +39,8 @@ const Cart = ({
         })}
       </Grid>
       <div className={classes.cardDetails}>
-        <Typography variant="h7">
-          Subtotal:{cart.subtotal.formatted_with_symbol}
+      <Typography variant="h3">
+          Subtotal: <span className="text-orange"> {cart.subtotal.formatted_with_symbol} </span>
         </Typography>
         <div>
           <Button
@@ -72,7 +72,7 @@ const Cart = ({
   if (!cart.line_items) return "...Loading";
 
   return (
-    <Container>
+    <div className="gradient-light container-fluid" style={{minHeight: "150vh"}}>
       <div className={classes.toolbar} />
       
       <h1 className="display-4 my-3 heading1">
@@ -81,7 +81,7 @@ const Cart = ({
       <div className={classes.toolbar} />
 
       {cart.line_items.length ? <FilledCart /> : <EmptyCart />}
-    </Container>
+    </div>
   );
 };
 
