@@ -1,11 +1,10 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import { Apartment } from "@material-ui/icons";
 
 
 const About = () => {
   return (
-    <Container className="text-center mt-5 pt-5">
+    <div className="text-center mt-5 pt-5 gradient-light container-fluid">
       <h1 className="display-4 my-3 heading1">
         <Apartment style={{ fontSize: "1em" }} /> About us
       </h1>
@@ -23,7 +22,7 @@ const About = () => {
         repellendus itaque corporis exercitationem a. Debitis non excepturi
         quas!
       </p>
-    </Container>
+    </div>
   );
 };
 
