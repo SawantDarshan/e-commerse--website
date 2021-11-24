@@ -4,6 +4,10 @@ body{
 .text-orange{
     color: #F79234;
 }
+.bg-orange{
+    color: #F79234;
+
+}
 .shadow-box{
     box-shadow: 5px 5px 3px 3px #F79234;
     transition: all 0.3s;
