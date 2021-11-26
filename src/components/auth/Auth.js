@@ -19,7 +19,7 @@ const Auth = ({ allAuthStates, registerUser, loginUser, demoLogin }) => {
     <Container className="p-5 my-5">
       <Router>
         <p className="text-center m-2 bg-orange p-1 text-white rounded">
-          Click for quick demo of website it will fake login and let you browse
+          Click demo for quick demo of website it will fake login and let you browse
           other components. Enjoy!
         </p>
         <br />

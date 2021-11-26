@@ -1,27 +1,36 @@
 import React from "react";
 import { Apartment } from "@material-ui/icons";
+import AboutCard from "./aboutCard/AboutCard";
+import imgCocktail from "../../asset/get-cocktail.PNG";
+import imgFood from "../../asset/food.PNG";
+
+import { Container } from "react-bootstrap";
 
 
 const About = () => {
   return (
     <div className="text-center mt-5 pt-5 gradient-light container-fluid">
       <h1 className="display-4 my-3 heading1">
-        <Apartment style={{ fontSize: "1em" }} /> About us
+      <Apartment style={{ fontSize: "1em" }} />
       </h1>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-        quibusdam aspernatur sapiente repellendus culpa soluta neque ullam
-        consequuntur eius debitis quam, tenetur alias sint laudantium voluptatem
-        cum vero reiciendis quis aut quidem quia veritatis itaque eos vel! Fuga,
-        recusandae placeat. Nemo repellendus error voluptatem esse eaque ab
-        mollitia amet in optio possimus veniam aspernatur similique quas harum
-        unde molestias suscipit fuga odio quam, numquam adipisci sapiente
-        explicabo eveniet! Saepe mollitia, harum iure laudantium corporis fugit
-        ad libero vitae praesentium. Beatae reprehenderit perspiciatis, ullam
-        distinctio fuga assumenda, sed voluptas dolorum consequatur quam
-        repellendus itaque corporis exercitationem a. Debitis non excepturi
-        quas!
+      <p className="text-left">
+      Hi, This is <em><strong> darshan Sawant (Softwear Developer) </strong></em>
       </p>
+      <hr />
+      <br />
+      <br />
+      <h2 className="text-danger">
+        PROJECTS
+      </h2>
+      <br />
+      <br />
+      <Container>
+      <div className="row">
+      <AboutCard name="GET COCKTAIL" url="https://get-cocktail.netlify.app/" details="React.js, CSS, HTML, JavaScript" image={imgCocktail}/>
+      <AboutCard name="FOOD MENU" url="https://sawantdarshan.github.io/Food-Menu/" details="JavaScript, HTML, CSS, BOOTSTRAP" image={imgFood}/>
+      </div>
+      </Container>
+      
     </div>
   );
 };
