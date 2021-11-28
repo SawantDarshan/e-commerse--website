@@ -1,6 +1,6 @@
 import React from "react";
 import CartItem from "./cartItem/CartItem";
-import { Container, Typography, Button, Grid } from "@material-ui/core";
+import { Typography, Button, Grid } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import useStyles from "./styles";
 import { CardTravel } from "@material-ui/icons";

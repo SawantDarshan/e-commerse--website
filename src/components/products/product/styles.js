@@ -7,9 +7,11 @@ export default makeStyles(() => ({
     minHeight: "26em",
     borderRadius: "2em",
     backgroundColor: '#E6F4F1',
-    transition: "all 1s",
+    transition: "all 0.3s",
+    boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
     "&:hover": {
-      backgroundColor: 'rgb(7, 177, 77, 0.42)'
+      backgroundColor: 'rgb(7, 177, 77, 0.42)',
+      boxShadow: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)"
     }
   },
   media: {
